@@ -7,11 +7,22 @@ function result = simpson(f, a, b,error, level_max)
 %   function will terminate.
 tic
 figure
-global flag
+global flag points
+points = zeros(1,5);
 flag = false;
 level = 0;
 result = intsimpson(f, a, b, error, level, level_max);
-fplot(f,[a b], 'r')
+x = linspace(a, b, 1000);
+%y = f(x);
+plot(x, f(x), 'r')
+hold on
+[r c] = size(points);
+for i = 1:r
+    for j = 1:c
+        plot(points(i,j), f(points(i,j)), 'bo')
+    end
+end
+%plot(points, f(points))
 if flag == true
     fprintf('Maximum level reached \n');
 end
