@@ -13,8 +13,8 @@ flag = false;
 level = 0;
 result = intsimpson(f, a, b, error, level, level_max);
 x = linspace(a, b, 1000);
-%y = f(x);
-plot(x, f(x), 'r')
+y = f(x);
+plot(x, y, 'r')
 hold on
 [r c] = size(points);
 for i = 1:r
