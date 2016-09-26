@@ -1,7 +1,7 @@
 function dy = sinder(x, n)
-%This estimates the derivative of the sine function at point x using n iterations. 
-%    This uses the definition of derivative equation f'(x) = lim(h->0)(f(x+h) - f(x))/h. 
-%    imax is the number of iterations reached (capped by error); emax is the amount of error at imax.  
+%This estimates the derivative of the sine function at point x using n iterations.
+%    This uses the definition of derivative equation f'(x) = lim(h->0)(f(x+h) - f(x))/h.
+%    imax is the number of iterations reached (capped by error); emax is the amount of error at imax.
 
 %Set up
 emax = 0;
