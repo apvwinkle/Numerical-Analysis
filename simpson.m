@@ -1,10 +1,10 @@
-function result = simpson(f, a, b,error, level_max)
+function result = simpson(f, a, b, error, level_max)
 %This function runs intsimpson, a recursive numerical integration function
-%   f is a function, input using a function handle; a and b are the
-%   endpoints of the interval (a < b); error is the desired accuracY; level
-%   is the current level of recursion (the starting level should be 0);
+%   f is a function, input using a function handle;
+%   a and b are the endpoints of the interval (a < b);
+%   error is the desired accuracy;
 %   level_max is the maximum number of recursions allowed before the
-%   function will terminate.
+%        function will terminate.
 tic
 figure
 global flag points
