@@ -19,7 +19,7 @@ else
     intercept = (Sxx*Sy - Sxy*Sx) / (n*Sxx - Sx^2);
 end
 for i = 1:length(x)
-E(i) = ( y(i) - (slope*x(i) + intercept) )^2;
+    E(i) = ( y(i) - (slope*x(i) + intercept) )^2;
 end
 Error = sum(E)
 eq = [slope intercept];
