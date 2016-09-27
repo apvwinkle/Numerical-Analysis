@@ -1,10 +1,10 @@
-%Graphing the Astronomer's Raw Data
+function foo = GraphData(x,y)
+%Graphs the Raw Data of Astronomer's Spectral Lines.
+%   x (frequency) and y (specific intensity) should be vectors of even
+%   length
 figure
-A = xlsread('C:\Users\April\OneDrive\Senior Year\Numerical Analysis\spectrum.xls');
-[r c] = size(A);
-f = A(:,1);
-s = A(:,2);
-plot(f,s);
-title('Astronomer''s Raw Data');
+plot(x,y,'Color','b','DisplayName','Raw Data');
 xlabel('Frequency (Hz)');
 ylabel('Specific Intensity (W/Hz*m^2)');
+hold on
+end
