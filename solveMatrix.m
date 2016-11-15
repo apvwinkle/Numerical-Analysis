@@ -78,5 +78,5 @@ for k = 1:kmax
         return;
     end
 end
-fprintf('maximun iterations reached \n')
+fprintf('maximun iterations reached\n')
 end

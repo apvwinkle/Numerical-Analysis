@@ -23,4 +23,3 @@ title('SOR: Number of Iterations per Omega Value');
 xlabel('Value of Omega');
 ylabel('Number of Iterations');
 end
-
