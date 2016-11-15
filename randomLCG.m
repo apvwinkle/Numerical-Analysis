@@ -28,4 +28,3 @@ switch option
     case 'no'
 end
 end
-
