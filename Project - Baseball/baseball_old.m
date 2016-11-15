@@ -71,4 +71,3 @@ figure;
 [X2, T2] = RK4_3D(f2,x,0,time_end,step_size);
 plot3(X2(:,1),X2(:,2),X2(:,3))
 xlabel('X'), ylabel('Y'), zlabel('Z')
-

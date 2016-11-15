@@ -1,4 +1,4 @@
-function [X, T] = RK4_3D(f, x, a, b, h)
+function [X, T] = RK4_autonomous(f, x, a, b, h)
 %This function solves a system of first-order Differential Equations using
 %the Runga Kutta of Order Four method
 %   f is a vector of functions, inputted as function handles

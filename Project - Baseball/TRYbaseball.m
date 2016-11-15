@@ -17,12 +17,12 @@ end
 POS = zeros(length(0:.0000001:0.3803727),3)
 for t1 = 0:.0000001:0.3803727;
     posn_f1 = f1(t1);
-    POS(t1*
+    %POS(t1* ??????????
 end
 display = [posn_f1;t1]; %used to find t value corresponding to y = 1.417
 plot3(posn_f1(1,:),posn_f1(2,:),posn_f1(3,:));
-xlabel(’X’); ylabel(’Y’); zlabel(’Z’)
-title(’Sportvision trajectory’)
+xlabel('X'); ylabel('Y'); zlabel('Z')
+title('Sportvision trajectory')
 grid on
 n = length(posn_f1(1,:));
 final_posn = posn_f1(:,3803728);
@@ -37,8 +37,8 @@ t2 = [0:.0000001:0.3520677];
 posn_f2 = f2(t2);
 display = [posn_f2;t2]; %used to find t value
 plot3(posn_f2(1,:),posn_f2(2,:),posn_f2(3,:));
-xlabel(’X’); ylabel(’Y’); zlabel(’Z’)
-title(’Sportvision trajectory’)
+xlabel('X'); ylabel('Y'); zlabel('Z')
+title('Sportvision trajectory')
 grid on
 %%plot both pitches
 hold on
@@ -49,13 +49,13 @@ plot(posn_f1(1,:),posn_f1(2,:))
 hold on
 plot(posn_f2(1,:),posn_f2(2,:))
 grid on
-xlabel(’X Trajectory’); ylabel(’Y Trajectory’);
-title(’X-Y Sportvision Trajectory of Pitch 1 and Pitch 2’)
+xlabel('X Trajectory'); ylabel('Y Trajectory');
+title('X-Y Sportvision Trajectory of Pitch 1 and Pitch 2')
 %YZ trajectory
 hold off
 plot(posn_f1(2,:),posn_f1(3,:))
 hold on
 plot(posn_f2(2,:),posn_f2(3,:))
 grid on
-xlabel(’Y Trajectory’); ylabel(’Z Trajectory’);
-title(’Y-Z Sportvision Trajectory of Pitch 1 and Pitch 2’)
+xlabel('Y Trajectory'); ylabel('Z Trajectory');
+title('Y-Z Sportvision Trajectory of Pitch 1 and Pitch 2')
