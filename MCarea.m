@@ -11,11 +11,10 @@ for i = 1:m
     for j = 1:n
         %Change conditional statements depending on the region
         if x(j)^3 + y(j)^3 <= 29 && exp(x(j)) - 2 <= y(j)
-            count = count + 1
-            j
+            count = count + 1;
         end
     end
-    A = count*abs((xrange(2)-xrange(1))*(yrange(2)-yrange(1)))/n;
+    A(i) = count*abs((xrange(2)-xrange(1))*(yrange(2)-yrange(1)))/n;
 end
 area = mean(A);
 figure
@@ -23,6 +22,7 @@ hold off
 hist(A);
 figure;
 hold on
+%Change plotting statements depending on the region
 xplot = linspace(1,3);
 f1 = @(x) exp(x) - 2;
 f2 = @(x) (x.^3 - 29).^(1/3);
